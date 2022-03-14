@@ -20,31 +20,31 @@ function Lion(name, age) {
 }
 
 var panda = new Panda("Hagrid", 2); 
-var koala = new Koala("Schleepy", 3); 
-var lion = new Lion("Boo", 5);
+var koala = new Koala("Schleepy", 5); 
+var lion = new Lion("Boo", 10);
 
-const animals = [panda, koala, lion];
-const names = [panda.name, koala.name, lion.name];
+var animals = [panda, koala, lion];
+var names = [panda.name, koala.name, lion.name];
 
 function generateRandomIndex(maxIndex) {
   return Math.floor(Math.random() * maxIndex); 
 }
 
 function generateRandomName() {
-  var randomIndex = generateRandomIndex(maxIndex);
+  var randomIndex = generateRandomIndex(6);
   return names[randomIndex];
 }
 
-function generateRnadomAge() {
-  var randomIndex = generateRandomIndex(maxIndex); 
+function generateRandomAge() {
+  var randomIndex = generateRandomIndex(6); 
   return names[randomIndex].age;
 }
 
 function generateRandomAnimal() {
-  var randomIndex = generateRandomIndex(maxIndex); 
+  var randomIndex = generateRandomIndex(6); 
   var randomAnimal = animals[randomIndex];
-  var randomName = randomAnimal.name;
-  var randomAge = randomAnimal.age;
+  var randomName = generateRandomName();
+  var randomAge = generateRandomAge();
   if (randomAnimal instanceof Panda) {
     return new Panda(randomName, randomAge);
   } else if (randomAnimal instance of Koala) {
