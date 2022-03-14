@@ -52,5 +52,8 @@ function generateRandomAnimal() {
   } else if (randomAnimal instnace of Lion) {
     return new Lion(randomName, randomAge); 
   };
-  
+}
+
+function onLoad() {
+  var animal = generateRandomAnimal(); 
 }
