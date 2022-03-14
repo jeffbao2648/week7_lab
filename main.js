@@ -51,7 +51,7 @@ function generateRandomAnimal() {
     return new Koala(randomName, randomAge); 
   } else if (randomAnimal instnace of Lion) {
     return new Lion(randomName, randomAge); 
-  }
+  };
 }
 
 function onLoad() {
