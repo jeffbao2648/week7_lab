@@ -51,11 +51,11 @@ function generateRandomAnimal() {
     return new Koala(randomName, randomAge); 
   } else if (randomAnimal instnace of Lion) {
     return new Lion(randomName, randomAge); 
-  };
+  }
 }
 
 function onLoad() {
-  var animal = generateRandomAnimal(); 
+  var animal = generateRandomAnimal();
   document.getElementById("animal_information").textContent = animal.name + "( " + animal.age + "years old )";
   var imageId = document.getElementById("animal_image");
   imageTag.setAttribute("src", animal.image); 
