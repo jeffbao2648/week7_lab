@@ -8,7 +8,7 @@ function Panda(name, age) {
 function Koala(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a sleeping Koala;
+  this.image_alt = “An image of a sleeping Koala";
   this.image = “koala.jpg”;
 }
 
