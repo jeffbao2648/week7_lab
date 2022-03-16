@@ -47,9 +47,9 @@ function generateRandomAnimal() {
   var randomAge = generateRandomAge();
   if (randomAnimal instanceof Panda) {
     return new Panda(randomName, randomAge);
-  } else if (randomAnimal instance of Koala) {
+  } else if (randomAnimal instanceof Koala) {
     return new Koala(randomName, randomAge); 
-  } else if (randomAnimal instnace of Lion) {
+  } else if (randomAnimal instanceof Lion) {
     return new Lion(randomName, randomAge); 
   };
 }
