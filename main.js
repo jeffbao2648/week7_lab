@@ -27,21 +27,21 @@ const animals = [panda, koala, lion];
 const names = [panda.name, koala.name, lion.name];
 
 function generateRandomIndex(maxIndex) {
-  return Math.floor(Math.random() * maxIndex); 
+  return Math.floor(Math.random() * maxIndex);
 }
 
 function generateRandomName() {
-  let randomIndex = generateRandomIndex(6);
+  let randomIndex = generateRandomIndex(4);
   return names[randomIndex];
 }
 
 function generateRandomAge() {
-  let randomIndex = generateRandomIndex(6);
+  let randomIndex = generateRandomIndex(4);
   return animals[randomIndex].age;
 }
 
 function generateRandomAnimal() {
-  var randomIndex = generateRandomIndex(6); 
+  var randomIndex = generateRandomIndex(4); 
   var randomAnimal = animals[randomIndex];
   var randomName = generateRandomName();
   var randomAge = generateRandomAge();
