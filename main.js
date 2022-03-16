@@ -23,8 +23,8 @@ var panda = new Panda("Hagrid", 2);
 var koala = new Koala("Schleepy", 5); 
 var lion = new Lion("Boo", 10);
 
-var animals = [panda, koala, lion];
-var names = [panda.name, koala.name, lion.name];
+const animals = [panda, koala, lion];
+const names = [panda.name, koala.name, lion.name];
 
 function generateRandomIndex(maxIndex) {
   return Math.floor(Math.random() * maxIndex); 
