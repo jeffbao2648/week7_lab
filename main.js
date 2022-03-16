@@ -1,21 +1,21 @@
 function Panda(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a Panda”;
+  this.image_alt = "An image of a Panda";
   this.image = “panda.jpg”;
 }
 
 function Koala(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a sleeping Koala";
+  this.image_alt = "An image of a sleeping Koala";
   this.image = “koala.jpg”;
 }
 
 function Lion(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a Lion”;
+  this.image_alt = "An image of a Lion";
   this.image = “lion.jpg”;
 }
 
