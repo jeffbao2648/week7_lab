@@ -31,12 +31,12 @@ function generateRandomIndex(maxIndex) {
 }
 
 function generateRandomName() {
-  let randomIndex = generateRandomIndex(4);
+  var randomIndex = generateRandomIndex(4);
   return names[randomIndex];
 }
 
 function generateRandomAge() {
-  let randomIndex = generateRandomIndex(4);
+  var randomIndex = generateRandomIndex(4);
   return animals[randomIndex].age;
 }
 
