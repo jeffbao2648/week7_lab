@@ -37,7 +37,7 @@ function generateRandomName() {
 
 function generateRandomAge() {
   var randomIndex = generateRandomIndex(6); 
-  return names[randomIndex].age;
+  return animals[randomIndex].age;
 }
 
 function generateRandomAnimal() {
