@@ -2,49 +2,45 @@ function Panda(name, age) {
   this.name = name;
   this.age = age;
   this.image_alt = "An image of a Panda";
-  this.image = "panda.jpg";
+  this.image = "panda.png";
 }
 
 function Koala(name, age) {
   this.name = name;
   this.age = age;
   this.image_alt = "An image of a sleeping Koala";
-  this.image = "koala.jpg";
+  this.image = "koala.png";
 }
 
 function Lion(name, age) {
   this.name = name;
   this.age = age;
   this.image_alt = "An image of a Lion";
-  this.image = "lion.jpg";
+  this.image = "lion.png";
 }
 
-var panda = new Panda("Hagrid", 2); 
-var koala = new Koala("Schleepy", 5); 
-var lion = new Lion("Boo", 10);
 
-const animals = [panda, koala, lion];
-const names = [panda.name, koala.name, lion.name];
+let animals = [new Panda(), new Koala(), new Lion()];
+let names = ["Hagrid", "Schelepy", "Boo", "Simba", "Kodi", "Perry"];
 
 function generateRandomIndex(maxIndex) {
   return Math.floor(Math.random() * maxIndex);
 }
 
 function generateRandomName() {
-  var randomIndex = generateRandomIndex(4);
+  let randomIndex = generateRandomIndex(names.length);
   return names[randomIndex];
 }
 
 function generateRandomAge() {
-  var randomIndex = generateRandomIndex(4);
-  return animals[randomIndex].age;
+  return generateRandomIndex(5);
 }
 
 function generateRandomAnimal() {
-  var randomIndex = generateRandomIndex(4); 
-  var randomAnimal = animals[randomIndex];
-  var randomName = generateRandomName();
-  var randomAge = generateRandomAge();
+  let randomIndex = generateRandomIndex(animals.length); 
+  let randomAnimal = animals[randomIndex];
+  let randomName = generateRandomName();
+  let randomAge = generateRandomAge();
   if (randomAnimal instanceof Panda) {
     return new Panda(randomName, randomAge);
   } else if (randomAnimal instanceof Koala) {
@@ -55,9 +51,9 @@ function generateRandomAnimal() {
 }
 
 function onLoad() {
-  var animal = generateRandomAnimal();
+  let animal = generateRandomAnimal();
   document.getElementById("animal_information").textContent = animal.name + " (" + animal.age + " years old)";
-  var imageId = document.getElementById("animal_image");
+  let imageId = document.getElementById("animal_image");
   imageId.setAttribute("src", animal.image); 
   imageId.setAttribute("alt", animal.image_alt);
 }
