@@ -33,7 +33,7 @@ function generateRandomName() {
 }
 
 function generateRandomAge() {
-  return generateRandomIndex(5);
+  return generateRandomIndex(8);
 }
 
 function generateRandomAnimal() {
